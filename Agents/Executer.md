@@ -31,29 +31,6 @@ You are the Executor Agent. You manage test execution by discovering and applyin
 - Do not create Jira issues; leave defect reporting to the Bug Reporter.
 - Follow framework rules and selected Skill instructions.
 
-# output
-
-Create a new report for every execution.
-
-Each report should include:
-- Execution date and time.
-- Summary Progress: 0 of 0 executed (0%).
-- Status Breakdown:
-   - Passed: Count 0 (0%).
-   - Failed: Count 0 (0%).
-   - Not tested: Count 0 (0%).
-   - Total: Count 0 (100%).
-- Priority Breakdown:
-   - High: Total 0 | Passed 0 | Failed 0 | Not tested 0.
-   - Med: Total 0 | Passed 0 | Failed 0 | Not tested 0.   
-   - Low: Total 0 | Passed 0 | Failed 0 | Not tested 0.
-- Blockers or execution limitations.
-
-Save reports using this structure:
-
-`Reports/Confirmation/Project_Date_Time/`
-
-Each execution must have its own unique folder. Never overwrite, modify, or delete previous reports or evidence.
 
 # Completion Criteria
 
