@@ -9,11 +9,11 @@ The QA Agentic Framework receives QA requests from users, delegates tasks to spe
 
 ```mermaid
 flowchart TB
-    U["USER<br/>Requests a QA task"]
+    U(["USER<br/>Requests a QA task"])
     O["QA ORCHESTRATOR<br/>Understands the request and delegates the task"]
 
     subgraph AGENTS["SPECIALIZED AGENTS"]
-        direction TB
+        direction LR
         RA["Requirement Analyst"]
         TP["Test Planner"]
         TD["Test Designer"]
@@ -22,17 +22,17 @@ flowchart TB
         TC["Test Closure Analyst"]
     end
 
-    S["SKILLS<br/>Provide instructions and workflows"]
+    S["RELEVANT SKILLS<br/>Provide instructions and workflows"]
     MCP["TOOLS & INTEGRATIONS<br/>Playwright · Mobile MCP · Jira · Other tools"]
-    R["RESULTS & REPORTS<br/>Requested outputs returned to the user"]
+    APP[("TARGET APPLICATION / SYSTEM")]
+    R(["RESULTS & REPORTS<br/>Requested outputs delivered to the user"])
 
     U --> O
     O --> AGENTS
     AGENTS --> S
     S --> MCP
+    MCP <--> APP
     MCP --> R
-    R --> O
-    O --> U
 ```
 
 ## Main Components
