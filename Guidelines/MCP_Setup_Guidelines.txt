@@ -1,0 +1,9 @@
+1. Use official MCP servers.
+
+2. Ensure compatibility with the MCP Client.
+
+3. Follow the official setup and authentication instructions.
+
+4. Grant only the required permissions, preferably read-only.
+
+5. Verify the connection with a simple, safe test.

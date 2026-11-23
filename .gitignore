@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local MCP configuration
+.mcp.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Runtime data
+.playwright-mcp/
+node_modules/
+dist/
+coverage/
+*.log
